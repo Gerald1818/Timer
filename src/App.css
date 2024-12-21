@@ -1,0 +1,170 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2c2c2c; /* Dark grey background */
+  color: #fff; /* White text color */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #7a4b98; /* Purple color for the header */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Player Setup */
+.player-setup {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.player-setup input {
+  padding: 12px;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #7a4b98; /* Purple border */
+  background-color: #3e3e3e; /* Grey input background */
+  color: #fff; /* White text color */
+  width: 250px;
+}
+
+.player-setup input::placeholder {
+  color: #aaa; /* Light grey placeholder text */
+}
+
+.player-setup button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #7a4b98; /* Purple button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.player-setup button:hover {
+  background-color: #6a3c88; /* Darker purple on hover */
+}
+
+/* Player List */
+.player-list {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.player-list h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #7a4b98; /* Purple color for section titles */
+}
+
+.player-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.player-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #444; /* Dark grey for list items */
+  border: 1px solid #7a4b98; /* Purple border */
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.player-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.player-name {
+  font-weight: bold;
+  color: #fff; /* White text color */
+}
+
+.player-time, .player-done {
+  color: #aaa; /* Light grey text for stats */
+}
+
+/* Remove Button */
+.btn-remove {
+  background-color: #f44336; /* Red color for remove button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+.btn-remove:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Game Section */
+.game {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.current-player {
+  font-size: 1.5rem;
+  color: #7a4b98; /* Purple text for current player */
+}
+
+.current-duration, .total-game-duration {
+  font-size: 1.2rem;
+  color: #fff; /* White text color */
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #7a4b98; /* Purple color for general buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #6a3c88; /* Darker purple on hover */
+}
+
+/* Buttons specific to game */
+.btn-reset, .btn-done {
+  background-color: #f44336; /* Red color for reset/done buttons */
+}
+
+.btn-reset:hover, .btn-done:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Disabled State */
+button:disabled {
+  background-color: #888; /* Greyed-out color for disabled buttons */
+  cursor: not-allowed;
+}
